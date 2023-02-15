@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+--white: hsl(0, 0%, 100%);
+--black: hsl(0, 0%, 0%);
+--dark-gray: hsl(0, 0%, 55%);
+--very-dark-gray: hsl(0, 0%, 41%);
+--josefin-sans: 'Josefin Sans', sans-serif;
+--alata: 'Alata', sans-serif;
+--transition: all 0.3 linear;
+}
+
+body{
+    font-family: var(--alata);
+}
