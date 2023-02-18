@@ -1,0 +1,137 @@
+.footer{
+    background: var(--black);
+    color: var(--white);
+    padding: 2rem 5rem;
+}
+
+.footer__top{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.footer__social{
+    display: flex;
+}
+
+.footer__social__mb{
+    display: none;
+}
+
+.footer__bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.footer__menu{
+    display: flex;
+}
+
+.icon{
+    font-size: 1.3rem;
+    margin-right: 0.8rem;
+    padding-bottom: 0.5rem;
+}
+
+.footer__item{
+    margin-right: 1.2rem;
+    padding-bottom: 0.5rem;
+}
+
+.footer__copy{
+    font-family: var(--josefin-sans);
+}
+
+.attribution{
+    color: var(--dark-gray);
+    font-family: var(--josefin-sans);
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+    .footer__top{
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+    }
+    
+
+    .footer__bottom{
+        flex-direction: column;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .footer__social{
+        display: none;
+    }
+    
+    .footer__social__mb{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.5rem;
+        text-align: center;
+        width: 100%;
+    }
+    
+
+    .footer__menu{
+        flex-direction: column;
+    }
+
+    .footer__item{
+        margin-right: 0;
+        padding-bottom: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+    .footer__top{
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+    }
+    
+
+    .footer__bottom{
+        flex-direction: column;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .footer__social{
+        display: none;
+    }
+    
+    .footer__social__mb{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.5rem;
+        text-align: center;
+        width: 100%;
+    }
+    
+
+    .footer__menu{
+        flex-direction: column;
+    }
+
+    .footer__item{
+        margin-right: 0;
+        padding-bottom: 0.5rem;
+    }
+}

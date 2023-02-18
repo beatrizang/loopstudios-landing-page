@@ -1,0 +1,117 @@
+.interactive{
+    align-items: flex-end;
+    display: flex;
+    margin-top: 5rem;
+}
+
+.interative__img{
+    margin-left: 5rem;
+}
+
+.interative__img img{
+    width: 600px;
+}
+
+#interactive__mb{
+    display: none;
+}
+
+.interactive__text{
+    background: var(--white);
+    padding: 5rem 2rem 1rem 5rem;
+    width: 30%;
+    z-index: 5;
+    position: absolute;
+    left: 550px;
+}
+
+.interactive__text__title{
+    color: var(--black);
+    font-family: var(--josefin-sans);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.interactive__text__text{
+    color: var(--very-dark-gray);
+    line-height: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+
+    .interactive{
+        align-items: center;
+        display: flex;
+        margin-top: 5rem;
+        flex-direction: column;
+    }
+    .interative__img{
+        margin-left: 2rem;
+    }
+
+    #interactive__dk{
+        display: none;
+    }
+
+    #interactive__mb{
+        display: flex;
+        width: 95%;
+    }
+
+    .interactive__text{
+        padding: 0;
+        width: 90%;
+        z-index: 0;
+        position:relative;
+        left: 0;
+        text-align: center;
+    }
+
+    .interactive__text__title{
+        color: var(--black);
+        font-family: var(--josefin-sans);
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .interactive{
+        align-items: center;
+        display: flex;
+        margin-top: 5rem;
+        flex-direction: column;
+    }
+    .interative__img{
+        margin-left: 2rem;
+    }
+
+    #interactive__dk{
+        display: none;
+    }
+
+    #interactive__mb{
+        display: flex;
+        width: 95%;
+    }
+
+    .interactive__text{
+        padding: 0;
+        width: 90%;
+        z-index: 0;
+        position:relative;
+        left: 0;
+        text-align: center;
+    }
+
+    .interactive__text__title{
+        color: var(--black);
+        font-family: var(--josefin-sans);
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+}

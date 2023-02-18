@@ -13,19 +13,27 @@
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/variable.css">
   <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/interactive.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+
+  <script src="https://kit.fontawesome.com/58e0304b5a.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
   <header class="header">
     <div class="header__top">
       <img class="header__logo" src="./images/logo.svg" alt="Loopstudios logo">
+      <button id="btn__menu">
+        <img src="./images/icon-hamburger.svg" alt="Menu">
+      </button>
       <nav class="nav">
         <ul class="nav__menu">
-          <li class="nav__item"><a href="#">About</a></li>
-          <li class="nav__item"><a href="#">Careers</a></li>
-          <li class="nav__item"><a href="#">Events</a></li>
-          <li class="nav__item"><a href="#">Products</a></li>
-          <li class="nav__item"><a href="#">Support</a></li>
+          <li class="nav__item underline"><a href="#">About</a></li>
+          <li class="nav__item underline"><a href="#">Careers</a></li>
+          <li class="nav__item underline"><a href="#">Events</a></li>
+          <li class="nav__item underline"><a href="#">Products</a></li>
+          <li class="nav__item underline"><a href="#">Support</a></li>
         </ul>
       </nav>
     </div>
@@ -36,7 +44,8 @@
   
   <section class="interactive">
     <div class="interative__img">
-      <img src="./images/desktop/image-interactive.jpg" alt="">
+      <img id="interactive__dk" src="./images/desktop/image-interactive.jpg" alt="">
+      <img id="interactive__mb" src="./images/mobile/image-interactive.jpg" alt="">
     </div>
     <div class="interactive__text">
       <h2 class="interactive__text__title">The leader in interactive VR</h2>
@@ -55,59 +64,111 @@
     </div>
     <div class="creations__images">
       <div class="earth creations__img">
+        <div class="overlay"></div>
         <h3 class="creations__subtitle">Deep <br> earth</h3>
       </div>
       <div class="arcade creations__img">
-        Night arcade
+        <div class="overlay"></div>
+        <h3 class="creations__subtitle">Night arcade</h3>
       </div>
       <div class="soccer creations__img">
-        Soccer team VR
+        <div class="overlay"></div>
+        <h3 class="creations__subtitle">Soccer team VR</h3>
       </div>
       <div class="grid creations__img">
-        The grid
+        <div class="overlay"></div>
+        <h3 class="creations__subtitle">The grid</h3>
       </div>
       <div class="above creations__img">
-        From up above VR
+        <div class="overlay"></div>
+        <h3 class="creations__subtitle">From up above VR</h3>
       </div>
       <div class="borealis creations__img">
-        Pocket borealis
+        <div class="overlay"></div>
+        <h3 class="creations__subtitle">Pocket borealis</h3>
       </div>
       <div class="curiosity creations__img">
-        The curiosity
+        <div class="overlay"></div>
+        <h3 class="creations__subtitle">The curiosity</h3>
       </div>
       <div class="fisheye creations__img">
-        Make it fisheye
+        <div class="overlay"></div>
+        <h3 class="creations__subtitle">Make it fisheye</h3>
       </div>
     </div>
+    <button class="creations__button__mb">See all</button>
   </section>
 
   <footer class="footer">
-    <div>
+    <div class="footer__top">
       <img class="footer__logo" src="./images/logo.svg" alt="Loopstudios logo">
       <ul class="footer__social">
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
+        <li class="icon underline">
+          <a href="#">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+        </li>
+        <li class="icon underline">
+          <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
+        <li class="icon underline">
+          <a href="#">
+            <i class="fa-brands fa-pinterest"></i>
+          </a>
+        </li>
+        <li class="icon underline">
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
       </ul>
     </div>
-    <div>
+    <div class="footer__bottom">
       <nav class="footer__nav">
         <ul class="footer__menu">
-          <li class="footer__item"><a href="#">About</a></li>
-          <li class="footer__item"><a href="#">Careers</a></li>
-          <li class="footer__item"><a href="#">Events</a></li>
-          <li class="footer__item"><a href="#">Products</a></li>
-          <li class="footer__item"><a href="#">Support</a></li>
+          <li class="footer__item underline"><a href="#">About</a></li>
+          <li class="footer__item underline"><a href="#">Careers</a></li>
+          <li class="footer__item underline"><a href="#">Events</a></li>
+          <li class="footer__item underline"><a href="#">Products</a></li>
+          <li class="footer__item underline"><a href="#">Support</a></li>
         </ul>
       </nav>
+      <ul class="footer__social__mb">
+        <li class="icon underline">
+          <a href="#">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+        </li>
+        <li class="icon underline">
+          <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
+        <li class="icon underline">
+          <a href="#">
+            <i class="fa-brands fa-pinterest"></i>
+          </a>
+        </li>
+        <li class="icon underline">
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
       <p class="footer__copy">© 2021 Loopstudios. All rights reserved.</p>
     </div>
     <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/beatrizang" target="_blank">Beatriz</a>.
+      Challenge by 
+      <a class="underline" href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor
+      </a>. 
+      Coded by 
+      <a class="underline" href="https://github.com/beatrizang" target="_blank">
+        Beatriz
+      </a>.
     </div>
   </footer>
-  <script></script>
 </body>
 </html>
